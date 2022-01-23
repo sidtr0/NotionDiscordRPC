@@ -5,7 +5,7 @@ using NetDiscordRpc.RPC;
 
 class NotionWindow
 {
-    public static string? PageName = "";
+    public static string PageName = "";
 
     public static string GetPageName()
     {
@@ -21,11 +21,9 @@ class NotionWindow
 
         if (PageName == "")
         {
-            return "NOTION_CLOSED_ERROR";
-        } else
-        {
-            return PageName;
+            Environment.Exit(0);
         }
+        return PageName;
     }
 }
 
@@ -35,10 +33,6 @@ class RPC
 
     static void Main()
     {
-        if (NotionWindow.GetPageName() == "NOTION_CLOSED_ERROR")
-        {
-            Environment.Exit(0);
-        }
         DiscordRpc = new DiscordRPC("934687905971052545");
         DiscordRpc.Logger = new ConsoleLogger();
         DiscordRpc.Initialize();
