@@ -37,19 +37,24 @@ class RPC
         DiscordRpc.Logger = new ConsoleLogger();
         DiscordRpc.Initialize();
 
-        DiscordRpc.SetPresence(new RichPresence()
+        Timestamps timestamp = Timestamps.Now;
+
+        while (true)
         {
-            Details = NotionWindow.GetPageName(),
-            Assets = new Assets()
+            DiscordRpc.SetPresence(new RichPresence()
             {
-                LargeImageKey = "notion_app_logo",
-                LargeImageText = "Notion"
-            },
-            Timestamps = Timestamps.Now
-        });
+                Details = $"Editing {NotionWindow.GetPageName()}",
+                Assets = new Assets()
+                {
+                    LargeImageKey = "notion_app_logo",
+                    LargeImageText = "Notion"
+                },
+                Timestamps = timestamp
+            });
 
-        DiscordRpc.Invoke();
+            DiscordRpc.Invoke();
 
-        Console.ReadKey(true);
+            Task.Delay(5000).Wait();
+        }
     }
 }
