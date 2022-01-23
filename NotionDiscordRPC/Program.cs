@@ -9,23 +9,16 @@ class NotionWindow
 
     public static string GetPageName()
     {
-        // Get MainWindowTitle and assign it to PageName
-        Process[] processlist = Process.GetProcesses();
-        foreach (Process process in processlist)
-        {
-            if (!String.IsNullOrEmpty(process.MainWindowTitle) && process.ProcessName == "Notion")
-            {
-                PageName = process.MainWindowTitle;
-            }
-        }
-
-        if (PageName == "")
+        Process[] notionProcesses = Process.GetProcessesByName("notion");
+        if (notionProcesses.Length == 0)
         {
             Environment.Exit(0);
         }
+        PageName = notionProcesses[0].MainWindowTitle;
         return PageName;
     }
 }
+
 
 class RPC
 {
@@ -57,4 +50,4 @@ class RPC
             Task.Delay(5000).Wait();
         }
     }
-}
+} 
