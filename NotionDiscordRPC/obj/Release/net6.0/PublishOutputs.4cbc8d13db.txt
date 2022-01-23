@@ -1,0 +1,7 @@
+C:\Users\sidtr\Downloads\NotionDiscordRPC_Release\NotionDiscordRPC.exe
+C:\Users\sidtr\Downloads\NotionDiscordRPC_Release\NotionDiscordRPC.dll
+C:\Users\sidtr\Downloads\NotionDiscordRPC_Release\NotionDiscordRPC.deps.json
+C:\Users\sidtr\Downloads\NotionDiscordRPC_Release\NotionDiscordRPC.runtimeconfig.json
+C:\Users\sidtr\Downloads\NotionDiscordRPC_Release\NotionDiscordRPC.pdb
+C:\Users\sidtr\Downloads\NotionDiscordRPC_Release\NetDiscordRpc.dll
+C:\Users\sidtr\Downloads\NotionDiscordRPC_Release\Newtonsoft.Json.dll

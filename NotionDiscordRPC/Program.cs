@@ -5,11 +5,10 @@ using NetDiscordRpc.RPC;
 
 class NotionWindow
 {
-    public static string PageName = "";
+    public static string? PageName = "";
 
     public static string GetPageName()
     {
-
         // Get MainWindowTitle and assign it to PageName
         Process[] processlist = Process.GetProcesses();
         foreach (Process process in processlist)
@@ -19,7 +18,14 @@ class NotionWindow
                 PageName = process.MainWindowTitle;
             }
         }
-        return PageName;
+
+        if (PageName == "")
+        {
+            return "NOTION_CLOSED_ERROR";
+        } else
+        {
+            return PageName;
+        }
     }
 }
 
@@ -29,6 +35,10 @@ class RPC
 
     static void Main()
     {
+        if (NotionWindow.GetPageName() == "NOTION_CLOSED_ERROR")
+        {
+            Environment.Exit(0);
+        }
         DiscordRpc = new DiscordRPC("934687905971052545");
         DiscordRpc.Logger = new ConsoleLogger();
         DiscordRpc.Initialize();

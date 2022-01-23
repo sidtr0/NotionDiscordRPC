@@ -4,7 +4,6 @@ C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\bin\De
 C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\bin\Debug\net6.0\NotionDiscordRPC.dll
 C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\bin\Debug\net6.0\ref\NotionDiscordRPC.dll
 C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\bin\Debug\net6.0\NotionDiscordRPC.pdb
-C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\obj\Debug\net6.0\NotionDiscordRPC.csproj.AssemblyReference.cache
 C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\obj\Debug\net6.0\NotionDiscordRPC.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\obj\Debug\net6.0\NotionDiscordRPC.AssemblyInfoInputs.cache
 C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\obj\Debug\net6.0\NotionDiscordRPC.AssemblyInfo.cs
@@ -16,3 +15,4 @@ C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\obj\De
 C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\obj\Debug\net6.0\NotionDiscordRPC.csproj.CopyComplete
 C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\bin\Debug\net6.0\NetDiscordRpc.dll
+C:\Users\sidtr\Documents\DotnetProjects\NotionDiscordRPC\NotionDiscordRPC\obj\Debug\net6.0\NotionDiscordRPC.csproj.AssemblyReference.cache
